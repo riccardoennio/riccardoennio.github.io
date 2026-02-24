@@ -40,7 +40,7 @@ body {
   --clr-bg-alt: #1a1a1a;    /* card */
   --clr-fg: #dcdcdc;        /* testo normale */
   --clr-fg-alt: #ffffff;    /* titoli */
-  --clr-primary: #ffffff;   /* accenti */
+  --clr-primary: #bf4539;   /* accenti */
   --shadow: rgba(0, 0, 0, 0.7) 0px 25px 50px -12px;
 }
 
