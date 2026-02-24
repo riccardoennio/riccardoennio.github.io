@@ -36,12 +36,12 @@ body {
 }
 
 .dark {
-  --clr-bg: #0e0e0e;
-  --clr-bg-alt: #181818;
-  --clr-fg: #d6d6d6;
-  --clr-fg-alt: #ffffff;
-  --clr-primary: #ffffff;
-  --shadow: rgba(0, 0, 0, 0.6) 0px 20px 40px -10px;
+  --clr-bg: #0f0f0f;        /* sfondo principale */
+  --clr-bg-alt: #1a1a1a;    /* card */
+  --clr-fg: #dcdcdc;        /* testo normale */
+  --clr-fg-alt: #ffffff;    /* titoli */
+  --clr-primary: #ffffff;   /* accenti */
+  --shadow: rgba(0, 0, 0, 0.7) 0px 25px 50px -12px;
 }
 
 ::-moz-selection {
@@ -65,6 +65,15 @@ h4 {
 
 h1 {
   font-size: 4rem;
+}
+
+h1 {
+  letter-spacing: -1px;
+}
+
+.section__title {
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 h2 {
@@ -294,6 +303,8 @@ main {
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  background-color: var(--clr-bg-alt);
+  border-radius: 12px;
 }
 
 .project:hover {
