@@ -218,6 +218,13 @@ main {
   margin-top: 1em;
 }
 
+/* Make entire project card clickable */
+.project-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 /* =================================================
    BUTTONS
 ================================================= */
