@@ -230,7 +230,7 @@ main {
 ================================================= */
 
 .btn {
-  display: block;
+  display: inline-block;
   padding: 0.8em 1.4em;
   font-size: 0.9rem;
   font-weight: 500;
