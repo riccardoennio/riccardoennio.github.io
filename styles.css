@@ -249,38 +249,32 @@ main {
 }
 
 /* =================================================
-   ABOUT ME
+   ABOUT ME (Image Left / Text Right)
 ================================================= */
 
 .about-me {
-  text-align: center;           /* centers header, photo, text */
-  max-width: 700px;
-  margin: 3em auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+
+  max-width: 1000px;
+  margin: 4em auto 0 auto;
+  text-align: left;
 }
 
-.about-me__photo {
-  margin: 2em 0;                /* space between header and photo */
-}
-
+/* Photo */
 .about-me__photo img {
-  width: 250px;                 /* desktop photo size */
-  max-width: 90%;               /* responsive for small screens */
+  width: 300px;
   height: auto;
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: var(--shadow);
-  object-fit: cover;
 }
 
+/* Text block */
 .about-me__info {
-  margin-top: 2em;
-  font-size: 1rem;
-  line-height: 1.6;
-
-  max-width: 600px;      /* controls readable width */
-  margin-left: auto;     /* centers the text block */
-  margin-right: auto;    /* centers the text block */
-
-  text-align: left;      /* text aligned left inside centered block */
+  max-width: 500px;
+  line-height: 1.7;
 }
 
 /* =================================================
@@ -434,9 +428,11 @@ main {
     text-align: center;
   }
 
-  .about-me {
-    margin-top: 2em;            /* tighter spacing on mobile */
-  }
+   .about-me {
+     flex-direction: column;
+     text-align: center;
+     gap: 2em;
+   }
    
   .section {
     margin-top: 4em;
