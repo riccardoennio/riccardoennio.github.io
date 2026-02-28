@@ -253,22 +253,18 @@ main {
 ================================================= */
 
 .about-me {
-  text-align: center; /* centers the section title */
+  text-align: center;         /* centers everything */
+  max-width: 900px;           /* matches other sections */
+  margin: 3em auto 0 auto;    /* centered with spacing on top */
 }
 
-.about-me__content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center; /* centers the photo + text horizontally */
-  gap: 2em;
-  max-width: 900px; /* constrains content width */
-  margin: 2em auto 0 auto; /* auto horizontal margin to center */
-  flex-wrap: wrap; /* stack on small screens */
+.about-me__photo {
+  margin: 2em 0;              /* spacing between header and photo */
 }
 
 .about-me__photo img {
-  width: 250px;
-  max-width: 90%; /* prevents image from being too wide on small screens */
+  width: 250px;               /* desktop photo size */
+  max-width: 90%;             /* responsive */
   height: auto;
   border-radius: 12px;
   box-shadow: var(--shadow);
@@ -276,12 +272,9 @@ main {
 }
 
 .about-me__info {
-  flex: 1;
-  min-width: 250px;
-  max-width: 500px; /* constrain text width */
+  margin-top: 2em;            /* spacing between photo and text */
   font-size: 1rem;
   line-height: 1.5;
-  text-align: left; /* text left-aligned next to photo */
 }
 
 /* =================================================
