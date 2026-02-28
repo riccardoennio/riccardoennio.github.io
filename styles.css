@@ -14,10 +14,10 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  line-height: 1.5;
+  line-height: 1.4;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
-  font-size: 14px; /* smaller, cleaner base font */
+  font-size: 13px; /* smaller base font */
 }
 
 /* =================================================
@@ -30,7 +30,7 @@ body {
   --clr-fg: #555;
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
-  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --shadow: rgba(100, 100, 111, 0.15) 0px 5px 20px 0px;
 }
 
 .dark {
@@ -39,7 +39,7 @@ body {
   --clr-fg: #dcdcdc;
   --clr-fg-alt: #ffffff;
   --clr-primary: #bf4539;
-  --shadow: rgba(0, 0, 0, 0.7) 0px 25px 50px -12px;
+  --shadow: rgba(0, 0, 0, 0.6) 0px 20px 40px -10px;
 }
 
 /* Text Selection */
@@ -58,28 +58,27 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 3rem; /* was 4rem */
-  letter-spacing: -1px;
+  font-size: 2.8rem; /* was 4rem */
+  letter-spacing: -0.5px;
 }
 
 h2 {
-  font-size: 1.7rem; /* was 2rem */
+  font-size: 1.5rem; /* was 2rem */
 }
 
 h3 {
-  font-size: 1.3rem; /* was 1.5rem */
+  font-size: 1.1rem; /* was 1.5rem */
 }
 
 h4 {
-  font-size: 1.1rem; /* optional, smaller */
+  font-size: 1rem;
 }
 
 .section__title {
   text-align: center;
-   font-size: 1.2rem;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em; /* smaller margin */
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.5px; /* tighter */
   font-weight: 600;
 }
 
@@ -108,12 +107,12 @@ main {
 }
 
 .header {
-  height: 8em;
+  height: 6.5em; /* reduced */
   justify-content: space-between;
 }
 
 .section {
-  margin-top: 3em;
+  margin-top: 2em; /* reduced spacing */
 }
 
 /* =================================================
@@ -122,24 +121,24 @@ main {
 
 .nav__list {
   display: flex;
-  margin-right: 1.5em;
+  margin-right: 1em;
 }
 
 .nav__list-item {
-  margin-left: 1.5em;
+  margin-left: 1em;
 }
 
 .link {
   color: var(--clr-primary);
   position: relative;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.2em;
 }
 
 .link::before {
   content: "";
   position: absolute;
   width: 0%;
-  height: 0.2em;
+  height: 0.15em;
   bottom: 0;
   background-color: var(--clr-primary);
   transition: width 0.2s ease-in;
@@ -158,7 +157,7 @@ main {
 
 .link--icon {
   color: var(--clr-fg);
-  font-size: 1.2rem;
+  font-size: 1rem; /* smaller icons */
 }
 
 /* =================================================
@@ -167,7 +166,7 @@ main {
 
 .about {
   flex-direction: column;
-  margin-top: 3em;
+  margin-top: 2em; /* reduced */
 }
 
 .about__name {
@@ -175,14 +174,13 @@ main {
 }
 
 .about__role {
-  margin-top: 1.2em;
+  margin-top: 0.8em;
 }
 
 .about__desc {
-  margin-top: 2.4em;
-  max-width: 600px;
+  margin-top: 1.5em;
+  max-width: 550px;
   font-size: 0.9rem;
-  line-height: 1.6;
 }
 
 /* =================================================
@@ -190,14 +188,12 @@ main {
 ================================================= */
 
 .about__video {
-  margin-top: 4.5em;
-
+  margin-top: 3em; /* smaller spacing */
   width: 100%;
-  align-self: stretch;     /* <-- THIS is the key fix */
-
+  align-self: stretch;
   background-color: var(--clr-bg-alt);
-  padding: 1.5em;
-  border-radius: 16px;
+  padding: 1em;
+  border-radius: 12px; /* smaller radius */
 }
 
 .about__video iframe {
@@ -205,7 +201,7 @@ main {
   aspect-ratio: 16 / 9;
   display: block;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 /* =================================================
@@ -214,33 +210,32 @@ main {
 
 .project-page {
   max-width: 900px;
-  margin: 5em auto 0 auto;
+  margin: 3em auto 0 auto;
 }
 
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr)); /* smaller cards */
+  gap: 1.5em;
 }
 
 .project {
-  padding: 2em;
+  padding: 1.5em; /* smaller padding */
   text-align: center;
   background-color: var(--clr-bg-alt);
   box-shadow: var(--shadow);
-  border-radius: 12px;
+  border-radius: 10px; /* slightly smaller */
   transition: transform 0.2s linear;
 }
 
 .project:hover {
-  transform: translateY(-7px);
+  transform: translateY(-5px);
 }
 
 .project__description {
-  margin-top: 1em;
+  margin-top: 0.8em;
 }
 
-/* Make entire project card clickable */
 .project-card {
   text-decoration: none;
   color: inherit;
@@ -249,10 +244,10 @@ main {
 
 .project__img {
   width: 100%;
-  height: 200px; /* adjust as needed */
-  object-fit: cover; /* ensures the image fills the area without stretching */
-  border-radius: 12px 12px 0 0; /* rounded top corners to match card */
-  margin-bottom: 1em;
+  height: 160px; /* smaller */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0.8em;
 }
 
 /* =================================================
@@ -263,26 +258,23 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4em;
-
+  gap: 2.5em; /* smaller gap */
   max-width: 1000px;
-  margin: 4em auto 0 auto;
+  margin: 3em auto 0 auto; /* reduced top margin */
   text-align: left;
 }
 
-/* Photo */
 .about-me__photo img {
-  width: 300px;
+  width: 220px; /* smaller */
   height: auto;
-  border-radius: 16px;
+  border-radius: 12px;
   box-shadow: var(--shadow);
 }
 
-/* Text block */
 .about-me__info {
-  max-width: 500px;
+  max-width: 450px; /* smaller width */
   line-height: 1.6;
-   font-size: 0.9rem;
+  font-size: 0.9rem; /* smaller text */
 }
 
 /* =================================================
@@ -290,13 +282,12 @@ main {
 ================================================= */
 
 .project__video {
-  margin-top: 3em;
+  margin-top: 2em;
   width: 100%;
   align-self: stretch;
-
   background-color: var(--clr-bg-alt);
-  padding: 1.5em;
-  border-radius: 16px;
+  padding: 1em;
+  border-radius: 12px;
 }
 
 .project__video iframe {
@@ -304,7 +295,7 @@ main {
   aspect-ratio: 16 / 9;
   display: block;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 /* =================================================
@@ -313,8 +304,8 @@ main {
 
 .btn {
   display: inline-block;
-  padding: 0.6em 1.2em;
-  font-size: 0.8rem;
+  padding: 0.5em 1em;
+  font-size: 0.75rem; /* smaller */
   font-weight: 500;
   text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
@@ -361,20 +352,18 @@ main {
   font-weight: 500;
   font-size: 0.9rem;
   text-align: center;
-     line-height: 1.6;
 }
 
-/* Social icons row */
 .contact__social {
   display: flex;
-  gap: 1.5em;
+  gap: 1em; /* tighter */
   justify-content: center;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 .contact__social-link svg {
-  width: 36px;
-  height: 36px;
+  width: 28px; /* smaller icons */
+  height: 28px;
   fill: var(--clr-primary);
   transition: transform 0.2s ease, fill 0.2s ease;
 }
@@ -385,15 +374,14 @@ main {
   transform: scale(1.2);
 }
 
-/* Download CV button centered below */
 .contact__buttons {
   display: flex;
   justify-content: center;
 }
 
 .footer {
-  margin-top: 4em;
-  padding: 3em 0;
+  margin-top: 3em;
+  padding: 2em 0;
   text-align: center;
 }
 
@@ -405,8 +393,8 @@ main {
   display: none;
   position: fixed;
   bottom: 1em;
-  right: 2em;
-  font-size: 1.8rem;
+  right: 1.5em;
+  font-size: 1.5rem;
   background-color: transparent;
   transition: transform 0.2s ease-in-out;
 }
@@ -417,34 +405,34 @@ main {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 600px) {
 
   .header {
-    height: 6em;
+    height: 5.5em;
   }
 
-    .about-me__photo img {
-    width: 180px;               /* smaller photo on mobile */
+  .about-me__photo img {
+    width: 160px;
   }
 
   .about-me__info {
     font-size: 0.85rem;
-    max-width: 90%;             /* prevent text stretching */
+    max-width: 90%;
     text-align: center;
   }
 
-   .about-me {
-     flex-direction: column;
-     text-align: center;
-     gap: 2em;
-   }
-   
+  .about-me {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5em;
+  }
+
   .section {
-    margin-top: 4em;
+    margin-top: 3em;
   }
 
   .nav__list {
@@ -455,7 +443,7 @@ main {
     right: 0;
     width: 0;
     overflow: hidden;
-    padding: 4em 0;
+    padding: 3em 0;
     background-color: var(--clr-bg);
     transition: width 0.2s ease-in-out;
   }
@@ -470,7 +458,7 @@ main {
 
   .about {
     align-items: flex-start;
-    margin-top: 2em;
+    margin-top: 1.5em;
   }
 
   .scroll-container {
