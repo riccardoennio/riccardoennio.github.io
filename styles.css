@@ -183,10 +183,9 @@ main {
 ================================================= */
 
 .about__video {
-  margin-top: 4.5em;
-
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  background-color: var(--clr-bg-alt);
+  padding: 1.5em;
+  border-radius: 16px;
 }
 
 .about__video iframe {
@@ -194,6 +193,7 @@ main {
   aspect-ratio: 16 / 9;
   display: block;
   border: none;
+  border-radius: 12px;
 }
 
 /* =================================================
