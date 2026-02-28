@@ -179,10 +179,13 @@ main {
 }
 
 /* =================================================
-   SHOWREEL VIDEO (Responsive 16:9 Full Width)
+   SHOWREEL VIDEO (Framed + Large)
 ================================================= */
 
 .about__video {
+  margin-top: 4.5em;
+  width: 100%;
+  max-width: 1050px;   /* controls how large it can grow */
   background-color: var(--clr-bg-alt);
   padding: 1.5em;
   border-radius: 16px;
