@@ -184,7 +184,9 @@ main {
 
 .about__video {
   margin-top: 4.5em;
-  width: 100%;
+
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .about__video iframe {
@@ -192,7 +194,6 @@ main {
   aspect-ratio: 16 / 9;
   display: block;
   border: none;
-  border-radius: 12px;
 }
 
 /* =================================================
