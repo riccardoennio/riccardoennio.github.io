@@ -179,19 +179,19 @@ main {
 }
 
 /* =================================================
-   SHOWREEL VIDEO
+   SHOWREEL VIDEO (Responsive 16:9 Full Width)
 ================================================= */
 
 .about__video {
   margin-top: 4.5em;
   width: 100%;
-  max-width: 1100px;   /* same width as main layout */
 }
 
-.about__video video {
+.about__video iframe {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 9;
   display: block;
+  border: none;
   border-radius: 12px;
 }
 
