@@ -323,24 +323,26 @@ main {
   margin-bottom: 0.5em;
   font-weight: 500;
   font-size: 1rem;
+  text-align: center;
 }
 
 .contact__social {
   display: flex;
   gap: 1.5em;
-  margin-bottom: 2em; /* space before buttons */
-  justify-content: center; /* center icons */
+  margin-bottom: 2em;
+  justify-content: center;
 }
 
-.contact__social-link {
-  font-size: 2rem; /* bigger icons */
-  color: var(--clr-primary);
-  transition: transform 0.2s ease, color 0.2s ease;
+.contact__social-link svg {
+  width: 36px;
+  height: 36px;
+  fill: var(--clr-primary);
+  transition: transform 0.2s ease, fill 0.2s ease;
 }
 
-.contact__social-link:hover,
-.contact__social-link:focus {
-  color: var(--clr-fg-alt);
+.contact__social-link:hover svg,
+.contact__social-link:focus svg {
+  fill: var(--clr-fg-alt);
   transform: scale(1.2);
 }
 
