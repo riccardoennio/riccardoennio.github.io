@@ -17,6 +17,7 @@ body {
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
+  font-size: 14px; /* smaller, cleaner base font */
 }
 
 /* =================================================
@@ -57,23 +58,28 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem; /* was 4rem */
   letter-spacing: -1px;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.7rem; /* was 2rem */
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* was 1.5rem */
+}
+
+h4 {
+  font-size: 1.1rem; /* optional, smaller */
 }
 
 .section__title {
   text-align: center;
+   font-size: 1.2rem;
   margin-bottom: 1em;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   font-weight: 600;
 }
 
@@ -175,7 +181,8 @@ main {
 .about__desc {
   margin-top: 2.4em;
   max-width: 600px;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 /* =================================================
@@ -274,7 +281,8 @@ main {
 /* Text block */
 .about-me__info {
   max-width: 500px;
-  line-height: 1.7;
+  line-height: 1.6;
+   font-size: 0.9rem;
 }
 
 /* =================================================
@@ -305,8 +313,8 @@ main {
 
 .btn {
   display: inline-block;
-  padding: 0.8em 1.4em;
-  font-size: 0.9rem;
+  padding: 0.6em 1.2em;
+  font-size: 0.8rem;
   font-weight: 500;
   text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
@@ -351,8 +359,9 @@ main {
 .contact__social-text {
   margin-bottom: 0.5em;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
+     line-height: 1.6;
 }
 
 /* Social icons row */
@@ -419,11 +428,11 @@ main {
   }
 
     .about-me__photo img {
-    width: 200px;               /* smaller photo on mobile */
+    width: 180px;               /* smaller photo on mobile */
   }
 
   .about-me__info {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     max-width: 90%;             /* prevent text stretching */
     text-align: center;
   }
