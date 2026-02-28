@@ -252,17 +252,23 @@ main {
    ABOUT ME
 ================================================= */
 
+.about-me {
+  text-align: center; /* centers the section title */
+}
+
 .about-me__content {
   display: flex;
   align-items: flex-start;
+  justify-content: center; /* centers the photo + text horizontally */
   gap: 2em;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 900px; /* constrains content width */
+  margin: 2em auto 0 auto; /* auto horizontal margin to center */
   flex-wrap: wrap; /* stack on small screens */
 }
 
 .about-me__photo img {
   width: 250px;
+  max-width: 90%; /* prevents image from being too wide on small screens */
   height: auto;
   border-radius: 12px;
   box-shadow: var(--shadow);
@@ -272,8 +278,10 @@ main {
 .about-me__info {
   flex: 1;
   min-width: 250px;
+  max-width: 500px; /* constrain text width */
   font-size: 1rem;
   line-height: 1.5;
+  text-align: left; /* text left-aligned next to photo */
 }
 
 /* =================================================
@@ -429,6 +437,8 @@ main {
 
   .about-me__info {
     font-size: 0.95rem;
+    text-align: center; /* center text on mobile */
+    max-width: 90%;
   }
    
   .section {
