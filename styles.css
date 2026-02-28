@@ -326,11 +326,12 @@ main {
   text-align: center;
 }
 
+/* Social icons row */
 .contact__social {
   display: flex;
   gap: 1.5em;
-  margin-bottom: 2em;
   justify-content: center;
+  margin-bottom: 2em;
 }
 
 .contact__social-link svg {
@@ -344,6 +345,12 @@ main {
 .contact__social-link:focus svg {
   fill: var(--clr-fg-alt);
   transform: scale(1.2);
+}
+
+/* Download CV button centered below */
+.contact__buttons {
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
