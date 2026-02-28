@@ -240,6 +240,14 @@ main {
   display: block;
 }
 
+.project__img {
+  width: 100%;
+  height: 200px; /* adjust as needed */
+  object-fit: cover; /* ensures the image fills the area without stretching */
+  border-radius: 12px 12px 0 0; /* rounded top corners to match card */
+  margin-bottom: 1em;
+}
+
 /* =================================================
    PROJECT PAGE VIDEO (Same Style as Homepage)
 ================================================= */
