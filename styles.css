@@ -48,6 +48,11 @@ body {
   color: var(--clr-bg);
 }
 
+.text--accent {
+  color: var(--clr-primary);
+  font-weight: 600; /* optional, makes it stand out more */
+}
+
 /* =================================================
    TYPOGRAPHY
 ================================================= */
