@@ -249,6 +249,34 @@ main {
 }
 
 /* =================================================
+   ABOUT ME
+================================================= */
+
+.about-me__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* stack on small screens */
+}
+
+.about-me__photo img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
+
+.about-me__info {
+  flex: 1;
+  min-width: 250px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* =================================================
    PROJECT PAGE VIDEO (Same Style as Homepage)
 ================================================= */
 
@@ -389,6 +417,20 @@ main {
     height: 6em;
   }
 
+  .about-me__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-me__photo img {
+    width: 200px;
+  }
+
+  .about-me__info {
+    font-size: 0.95rem;
+  }
+   
   .section {
     margin-top: 4em;
   }
