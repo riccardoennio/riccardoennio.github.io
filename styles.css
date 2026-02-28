@@ -384,32 +384,41 @@ main {
   }
 }
 
-/* Small screens / mobile */
 @media (max-width: 600px) {
 
-  /* Header height */
+  /* Header adjustments */
   .header {
-    height: 6em;
+    height: auto;               /* allow flexible height */
+    flex-direction: row;        /* logo and nav in one line */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
   }
 
   /* Sections spacing */
   .section {
-    margin-top: 4em;
+    margin-top: 3em;
   }
 
   /* Navigation always visible and horizontal */
   .nav__list {
-    flex-direction: row;      /* horizontal menu */
-    position: static;         /* remove absolute positioning */
-    width: auto;              /* full width automatic */
+    display: flex !important;   /* make sure flex is applied */
+    flex-direction: row;        /* horizontal links */
+    position: static !important;
+    width: auto !important;
     padding: 0;
-    background: none;         /* remove background */
-    justify-content: flex-end; /* right-align links */
+    background: none !important;
+    justify-content: flex-end;
   }
 
   /* Navigation items spacing */
   .nav__list-item {
-    margin: 0 1.5em;          /* horizontal spacing */
+    margin: 0 1em;
+  }
+
+  /* Hide hamburger icon completely */
+  .fa-bars {
+    display: none !important;
   }
 
   /* About section alignment */
@@ -418,13 +427,8 @@ main {
     margin-top: 2em;
   }
 
-  /* Hide scroll-to-top button on mobile */
+  /* Hide scroll-to-top button */
   .scroll-container {
-    display: none;
-  }
-
-  /* Hide hamburger icon */
-  .fa-bars {
     display: none;
   }
 }
