@@ -195,6 +195,11 @@ main {
    PROJECTS
 ================================================= */
 
+.project-page {
+  max-width: 900px;
+  margin: 5em auto 0 auto;
+}
+
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
