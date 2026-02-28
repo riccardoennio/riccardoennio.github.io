@@ -377,49 +377,54 @@ main {
    RESPONSIVE
 ================================================= */
 
+/* Medium screens */
 @media (max-width: 900px) {
   h1 {
     font-size: 2.6rem;
   }
 }
 
+/* Small screens / mobile */
 @media (max-width: 600px) {
 
+  /* Header height */
   .header {
     height: 6em;
   }
 
+  /* Sections spacing */
   .section {
     margin-top: 4em;
   }
 
+  /* Navigation always visible and horizontal */
   .nav__list {
-    flex-direction: column;
-    position: absolute;
-    top: 5em;
-    left: 0;
-    right: 0;
-    width: 0;
-    overflow: hidden;
-    padding: 4em 0;
-    background-color: var(--clr-bg);
-    transition: width 0.2s ease-in-out;
+    flex-direction: row;      /* horizontal menu */
+    position: static;         /* remove absolute positioning */
+    width: auto;              /* full width automatic */
+    padding: 0;
+    background: none;         /* remove background */
+    justify-content: flex-end; /* right-align links */
   }
 
-  .display-nav-list {
-    width: 100%;
-  }
-
+  /* Navigation items spacing */
   .nav__list-item {
-    margin: 0.5em 0;
+    margin: 0 1.5em;          /* horizontal spacing */
   }
 
+  /* About section alignment */
   .about {
     align-items: flex-start;
     margin-top: 2em;
   }
 
+  /* Hide scroll-to-top button on mobile */
   .scroll-container {
+    display: none;
+  }
+
+  /* Hide hamburger icon */
+  .fa-bars {
     display: none;
   }
 }
