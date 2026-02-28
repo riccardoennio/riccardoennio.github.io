@@ -413,7 +413,12 @@ main {
 
   /* Navigation items spacing */
   .nav__list-item {
-    margin: 0 1em;
+    margin: 0 0.7em;            /* slightly less spacing */
+  }
+
+  /* Nav links font smaller on mobile */
+  .nav__list a {
+    font-size: 0.85rem;         /* smaller text */
   }
 
   /* Hide hamburger icon completely */
