@@ -327,20 +327,21 @@ main {
 
 .contact__social {
   display: flex;
-  gap: 1.2em;
+  gap: 1.5em;
   margin-bottom: 2em; /* space before buttons */
+  justify-content: center; /* center icons */
 }
 
-.contact__social a {
-  font-size: 1.5rem;
+.contact__social-link {
+  font-size: 2rem; /* bigger icons */
   color: var(--clr-primary);
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.contact__social a:hover,
-.contact__social a:focus {
+.contact__social-link:hover,
+.contact__social-link:focus {
   color: var(--clr-fg-alt);
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .footer {
