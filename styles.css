@@ -319,6 +319,30 @@ main {
   flex-direction: column;
 }
 
+.contact__social-text {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.contact__social {
+  display: flex;
+  gap: 1.2em;
+  margin-bottom: 2em; /* space before buttons */
+}
+
+.contact__social a {
+  font-size: 1.5rem;
+  color: var(--clr-primary);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact__social a:hover,
+.contact__social a:focus {
+  color: var(--clr-fg-alt);
+  transform: scale(1.1);
+}
+
 .footer {
   margin-top: 4em;
   padding: 3em 0;
