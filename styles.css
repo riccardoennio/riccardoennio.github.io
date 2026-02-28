@@ -272,10 +272,15 @@ main {
 }
 
 .about-me__info {
-  margin-top: 2em;              /* space between photo and text */
+  margin-top: 2em;
   font-size: 1rem;
-  line-height: 1.5;
-  text-align: center;           /* center text below photo */
+  line-height: 1.6;
+
+  max-width: 600px;      /* controls readable width */
+  margin-left: auto;     /* centers the text block */
+  margin-right: auto;    /* centers the text block */
+
+  text-align: left;      /* text aligned left inside centered block */
 }
 
 /* =================================================
