@@ -241,6 +241,28 @@ main {
 }
 
 /* =================================================
+   PROJECT PAGE VIDEO (Same Style as Homepage)
+================================================= */
+
+.project__video {
+  margin-top: 3em;
+  width: 100%;
+  align-self: stretch;
+
+  background-color: var(--clr-bg-alt);
+  padding: 1.5em;
+  border-radius: 16px;
+}
+
+.project__video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: none;
+  border-radius: 12px;
+}
+
+/* =================================================
    BUTTONS
 ================================================= */
 
