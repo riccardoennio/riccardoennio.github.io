@@ -232,6 +232,7 @@ main {
   box-shadow: var(--shadow);
   border-radius: 10px; /* slightly smaller */
   transition: transform 0.2s linear;
+   margin-bottom: 4rem; /* increase if you want even more space */
 }
 
 .project:hover {
