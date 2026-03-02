@@ -120,6 +120,21 @@ main {
   margin-top: 2em; /* reduced spacing */
 }
 
+.logo__link {
+  display: inline-block;
+}
+
+.logo__img {
+  width: 32px;   /* adjust size here */
+  height: auto;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.logo__img:hover {
+  transform: scale(1.1);
+}
+
 /* =================================================
    NAVIGATION
 ================================================= */
