@@ -172,6 +172,7 @@ main {
 .about {
   flex-direction: column;
   margin-top: 2em; /* reduced */
+  margin-bottom: 4rem; /* increase if you want even more space */
 }
 
 .about__name {
