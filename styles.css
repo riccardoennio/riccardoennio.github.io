@@ -325,9 +325,18 @@ main {
 /* LOCAL VIDEO */
 .project-video video {
   width: 100%;
-  border-radius: 14px;
+  align-self: stretch;
+  border-radius: 12px;
   display: block;
-  background-color: transparent; /* prevents flash */
+  background-color: var(--clr-bg-alt);
+}
+
+.project-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: none;
+  border-radius: 8px;
 }
 
 .project-video {
