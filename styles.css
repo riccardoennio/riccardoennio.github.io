@@ -303,6 +303,7 @@ main {
 .project-text p {
   margin-top: 1.8rem;
   line-height: 1.6;
+  font-size: 0.9rem; /* smaller text */
 }
 
 /* HERO IMAGE */
