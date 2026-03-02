@@ -272,6 +272,57 @@ main {
   margin-bottom: 0.8em;
 }
 
+/* =========================
+   PROJECT PAGE SYSTEM
+========================= */
+
+.project-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project-block {
+  margin-bottom: 3.5rem;
+}
+
+/* Text */
+.project-text {
+  max-width: 700px;
+}
+
+.project-text p {
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Hero Image */
+.project-hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+/* Image Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.project-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Local Video */
+.project-video video {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+}
+
 /* =================================================
    ABOUT ME (Image Left / Text Right)
 ================================================= */
