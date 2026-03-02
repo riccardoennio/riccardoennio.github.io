@@ -125,7 +125,7 @@ main {
 }
 
 .logo__img {
-  width: 32px;   /* adjust size here */
+  width: 50px;   /* adjust size here */
   height: auto;
   display: block;
   transition: transform 0.2s ease;
