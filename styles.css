@@ -333,6 +333,11 @@ main {
   width: 100%;
   border-radius: 14px;
   display: block;
+  background-color: var(--clr-bg); /* prevents flash */
+}
+
+.project-video {
+  transform: translateZ(0);
 }
 
 /* BACK BUTTON CENTERED */
