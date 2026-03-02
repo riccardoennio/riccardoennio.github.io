@@ -280,6 +280,7 @@ main {
   max-width: 1100px;
   margin: 0 auto;
   padding-top: 2rem;   /* more space from header */
+   background-color: transparent;
 }
 
 /* General spacing between blocks */
