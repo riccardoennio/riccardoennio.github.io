@@ -328,7 +328,7 @@ main {
   width: 100%;
   border-radius: 14px;
   display: block;
-  background-color: var(--clr-bg-alt); /* prevents flash */
+  background-color: transparent; /* prevents flash */
 }
 
 .project-video {
