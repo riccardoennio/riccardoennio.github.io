@@ -273,8 +273,7 @@ main {
 
 .project-page {
   max-width: 1100px;
-  margin: 3em auto 0 auto;   /* keeps spacing from header */
-  padding-top: 2rem;         /* extra breathing room */
+  margin: 2em auto 0 auto;   /* keeps spacing from header */
   background-color: transparent;
 }
 
