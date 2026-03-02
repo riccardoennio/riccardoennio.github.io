@@ -18,51 +18,65 @@
 
 <body class="dark">
 
-  <header class="header center">
-    <h3 class="logo">
-      <a href="https://riccardoennio.github.io" class="logo__link">
-        <img src="images/logo.png" alt="Riccardo Ennio logo" class="logo__img">
-      </a>
-    </h3>
-  </header>
+<header class="header center">
+  <h3 class="logo">
+    <a href="https://riccardoennio.github.io" class="logo__link">
+      <img src="images/logo.png" alt="Riccardo Ennio logo" class="logo__img">
+    </a>
+  </h3>
+</header>
 
-  <main>
-  <section class="section project-page">
+<main>
+<section class="section project-page">
 
+  <!-- ===== TITLE ===== -->
+  <div class="project-block project-text">
     <h1>Project 1</h1>
-
-    <p style="margin-top:2em; max-width:700px;">
-      Here you can write a full description of the project.
-      Talk about concept, production, tools used, festivals,
-      challenges, your role, etc.
+    <p>
+      Full description of the project.
+      Concept, production process, tools used, your role,
+      challenges, festivals, etc.
     </p>
+  </div>
 
-    <!-- Image -->
-    <img src="images/project1-01.png"
-         style="margin-top:2em; width:100%; max-width:900px; border-radius:12px;">
 
-    <!-- Video -->
-   <div class="project__video">
-  <iframe
-    src="https://www.youtube.com/embed/VIDEO_ID"
-    title="Project Video"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-</div>
+  <!-- ===== HERO IMAGE (BIG) ===== -->
+  <div class="project-block project-hero">
+    <img src="images/project1-hero.png" alt="Project 1 Hero Image">
+  </div>
 
-    <div style="margin-top:4em;">
-      <a href="index.html#projects" class="btn btn--outline">
-        ← Back to Projects
-      </a>
-    </div>
 
-    </section>
-  </main>
+  <!-- ===== IMAGE GRID ===== -->
+  <div class="project-block project-grid">
+    <img src="images/project1-01.png" alt="">
+    <img src="images/project1-02.png" alt="">
+    <img src="images/project1-03.png" alt="">
+    <img src="images/project1-04.png" alt="">
+  </div>
 
-  <footer class="footer">
-    © 2026 Riccardo Ennio
-  </footer>
+
+  <!-- ===== LOCAL VIDEO ===== -->
+  <div class="project-block project-video">
+    <video controls>
+      <source src="videos/project1-clip.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+  <!-- ===== BACK BUTTON ===== -->
+  <div class="project-block">
+    <a href="index.html#projects" class="btn btn--outline">
+      ← Back to Projects
+    </a>
+  </div>
+
+</section>
+</main>
+
+<footer class="footer">
+  © 2026 Riccardo Ennio
+</footer>
 
 </body>
 </html>
