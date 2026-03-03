@@ -231,7 +231,7 @@ main {
 
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr)); /* smaller cards */
+  grid-template-columns: repeat(2, 1fr); /* 2 cards max per row */
   gap: 1.5em;
 }
 
@@ -516,6 +516,10 @@ main {
     margin-top: 3em;
   }
 
+  .projects__grid {
+    grid-template-columns: 1fr; /* single column on mobile */
+  }
+   
   .nav__list {
     flex-direction: column;
     position: absolute;
