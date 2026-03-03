@@ -15,9 +15,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.4;
+  font-size: 13px;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
-  font-size: 13px; /* smaller base font */
 }
 
 /* =================================================
@@ -42,7 +42,6 @@ body {
   --shadow: rgba(0, 0, 0, 0.6) 0px 20px 40px -10px;
 }
 
-/* Text Selection */
 ::selection {
   background: var(--clr-primary);
   color: var(--clr-bg);
@@ -50,7 +49,7 @@ body {
 
 .text--accent {
   color: var(--clr-primary);
-  font-weight: 600; /* optional, makes it stand out more */
+  font-weight: 600;
 }
 
 /* =================================================
@@ -62,41 +61,24 @@ h1, h2, h3, h4 {
   color: var(--clr-fg-alt);
 }
 
-h1 {
-  font-size: 2.8rem; /* was 4rem */
-  letter-spacing: -0.5px;
-}
-
-h2 {
-  font-size: 1.5rem; /* was 2rem */
-}
-
-h3 {
-  font-size: 1.1rem; /* was 1.5rem */
-}
-
-h4 {
-  font-size: 1rem;
-}
+h1 { font-size: 2.8rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.1rem; }
+h4 { font-size: 1rem; }
 
 .section__title {
   text-align: center;
-  margin-bottom: 0.8em; /* smaller margin */
+  margin-bottom: 0.8em;
   text-transform: uppercase;
-  letter-spacing: 1.5px; /* tighter */
+  letter-spacing: 1.5px;
   font-weight: 600;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
+ul { list-style: none; }
+a { text-decoration: none; }
 
 /* =================================================
-   LAYOUT STRUCTURE
+   LAYOUT
 ================================================= */
 
 .center {
@@ -112,21 +94,20 @@ main {
 }
 
 .header {
-  height: 6.5em; /* reduced */
+  height: 6.5em;
   justify-content: space-between;
 }
 
 .section {
-  margin-top: 2em; /* reduced spacing */
+  margin-top: 2em;
 }
 
-.logo__link {
-  display: inline-block;
-}
+/* =================================================
+   LOGO
+================================================= */
 
 .logo__img {
-  width: 50px;   /* adjust size here */
-  height: auto;
+  width: 50px;
   display: block;
   transition: transform 0.2s ease;
 }
@@ -164,8 +145,7 @@ main {
   transition: width 0.2s ease-in;
 }
 
-.link:hover::before,
-.link:focus::before {
+.link:hover::before {
   width: 100%;
 }
 
@@ -177,7 +157,7 @@ main {
 
 .link--icon {
   color: var(--clr-fg);
-  font-size: 1rem; /* smaller icons */
+  font-size: 1rem;
 }
 
 /* =================================================
@@ -186,16 +166,12 @@ main {
 
 .about {
   flex-direction: column;
-  margin-top: 2em; /* reduced */
-  margin-bottom: 4rem; /* increase if you want even more space */
+  margin-top: 2em;
+  margin-bottom: 4rem;
 }
 
 .about__name {
   color: var(--clr-primary);
-}
-
-.about__role {
-  margin-top: 0.8em;
 }
 
 .about__desc {
@@ -205,110 +181,93 @@ main {
 }
 
 /* =================================================
-   SHOWREEL VIDEO (Framed + Large)
+   HOMEPAGE VIDEO (NO DARK BAND)
 ================================================= */
 
 .about__video {
-  margin-top: 3em; /* smaller spacing */
+  margin-top: 3em;
   width: 100%;
-  align-self: stretch;
-  background-color: var(--clr-bg-alt);
-  padding: 1em;
-  border-radius: 12px; /* smaller radius */
 }
 
 .about__video iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
-  display: block;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
+  display: block;
 }
 
 /* =================================================
-   PROJECTS
+   PROJECT GRID
 ================================================= */
 
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr)); /* smaller cards */
+  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
   gap: 1.5em;
 }
 
 .project {
-  padding: 1.5em; /* smaller padding */
+  padding: 1.5em;
   text-align: center;
   background-color: var(--clr-bg-alt);
   box-shadow: var(--shadow);
-  border-radius: 10px; /* slightly smaller */
+  border-radius: 10px;
   transition: transform 0.2s linear;
-   margin-bottom: 4rem; /* increase if you want even more space */
 }
 
 .project:hover {
   transform: translateY(-5px);
 }
 
-.project__description {
-  margin-top: 0.8em;
-}
-
-.project-card {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
 .project__img {
   width: 100%;
-  height: 160px; /* smaller */
+  height: 160px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
   margin-bottom: 0.8em;
 }
 
-/* =========================
-   PROJECT PAGE SYSTEM
-========================= */
+/* =================================================
+   PROJECT PAGE
+================================================= */
 
 .project-page {
   max-width: 1100px;
-  margin: 2em auto 0 auto;   /* keeps spacing from header */
-  background-color: transparent;
+  margin: 2em auto 0 auto;
 }
 
-/* General spacing between blocks */
 .project-block {
   margin-bottom: 4rem;
 }
 
 /* TEXT BLOCK */
+
 .project-text {
   max-width: 800px;
-  margin: 0 auto;      /* centers text block */
-  text-align: left;    /* keeps paragraph left aligned */
-   margin-bottom: 3rem;
+  margin: 0 auto 3rem auto;
 }
 
 .project-text h1 {
-  text-align: center;  /* title centered */
+  text-align: center;
 }
 
 .project-text p {
   margin-top: 1.8rem;
   line-height: 1.6;
-  font-size: 0.9rem; /* smaller text */
+  font-size: 0.9rem;
 }
 
 /* HERO IMAGE */
+
 .project-hero img {
   width: 100%;
-  height: auto;
   border-radius: 14px;
   display: block;
 }
 
 /* IMAGE GRID */
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -317,87 +276,53 @@ main {
 
 .project-grid img {
   width: 100%;
-  height: auto;
   border-radius: 12px;
   display: block;
 }
 
-/* LOCAL VIDEO */
-.project-video video {
-  width: 100%;
-  align-self: stretch;
-  border-radius: 12px;
-  display: block;
-  background-color: var(--clr-bg-alt);
-}
-
-.project-video iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  display: block;
-  border: none;
-  border-radius: 8px;
-}
+/* PROJECT VIDEOS (FIXED – NO FULL-WIDTH DARK BAND) */
 
 .project-video {
-  transform: translateZ(0);
+  width: 100%;
 }
 
-/* BACK BUTTON CENTERED */
-.project-block .btn {
-  display: inline-block;
+.project-video video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
 }
+
+/* BACK BUTTON */
 
 .project-block:last-child {
   text-align: center;
 }
 
 /* =================================================
-   ABOUT ME (Image Left / Text Right)
+   ABOUT ME
 ================================================= */
 
 .about-me {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5em; /* smaller gap */
+  gap: 2.5em;
   max-width: 1000px;
-  margin: 3em auto 0 auto; /* reduced top margin */
-  text-align: left;
+  margin: 3em auto 0 auto;
 }
 
 .about-me__photo img {
-  width: 220px; /* smaller */
-  height: auto;
+  width: 220px;
   border-radius: 12px;
   box-shadow: var(--shadow);
 }
 
 .about-me__info {
-  max-width: 450px; /* smaller width */
+  max-width: 450px;
   line-height: 1.6;
-  font-size: 0.9rem; /* smaller text */
-}
-
-/* =================================================
-   PROJECT PAGE VIDEO (Same Style as Homepage)
-================================================= */
-
-.project__video {
-  margin-top: 2em;
-  width: 100%;
-  align-self: stretch;
-  background-color: var(--clr-bg-alt);
-  padding: 1em;
-  border-radius: 12px;
-}
-
-.project__video iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  display: block;
-  border: none;
-  border-radius: 8px;
+  font-size: 0.9rem;
 }
 
 /* =================================================
@@ -407,7 +332,7 @@ main {
 .btn {
   display: inline-block;
   padding: 0.5em 1em;
-  font-size: 0.75rem; /* smaller */
+  font-size: 0.75rem;
   font-weight: 500;
   text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
@@ -418,7 +343,6 @@ main {
   border: 2px solid var(--clr-primary);
   position: relative;
   overflow: hidden;
-  z-index: 1;
 }
 
 .btn--outline::before {
@@ -431,55 +355,17 @@ main {
   z-index: -1;
 }
 
-.btn--outline:hover::before,
-.btn--outline:focus::before {
+.btn--outline:hover::before {
   right: 0;
 }
 
-.btn--outline:hover,
-.btn--outline:focus {
+.btn--outline:hover {
   color: var(--clr-bg);
 }
 
 /* =================================================
-   CONTACT & FOOTER
+   FOOTER
 ================================================= */
-
-.contact {
-  flex-direction: column;
-}
-
-.contact__social-text {
-  margin-bottom: 0.5em;
-  font-weight: 500;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.contact__social {
-  display: flex;
-  gap: 1em; /* tighter */
-  justify-content: center;
-  margin-bottom: 1.5em;
-}
-
-.contact__social-link svg {
-  width: 28px; /* smaller icons */
-  height: 28px;
-  fill: var(--clr-primary);
-  transition: transform 0.2s ease, fill 0.2s ease;
-}
-
-.contact__social-link:hover svg,
-.contact__social-link:focus svg {
-  fill: var(--clr-fg-alt);
-  transform: scale(1.2);
-}
-
-.contact__buttons {
-  display: flex;
-  justify-content: center;
-}
 
 .footer {
   margin-top: 3em;
@@ -488,44 +374,14 @@ main {
 }
 
 /* =================================================
-   SCROLL TO TOP
-================================================= */
-
-.scroll-top {
-  display: none;
-  position: fixed;
-  bottom: 1em;
-  right: 1.5em;
-  font-size: 1.5rem;
-  background-color: transparent;
-  transition: transform 0.2s ease-in-out;
-}
-
-/* =================================================
    RESPONSIVE
 ================================================= */
 
 @media (max-width: 900px) {
-  h1 {
-    font-size: 2rem;
-  }
+  h1 { font-size: 2rem; }
 }
 
 @media (max-width: 600px) {
-
-  .header {
-    height: 5.5em;
-  }
-
-  .about-me__photo img {
-    width: 160px;
-  }
-
-  .about-me__info {
-    font-size: 0.85rem;
-    max-width: 90%;
-    text-align: center;
-  }
 
   .about-me {
     flex-direction: column;
@@ -533,37 +389,16 @@ main {
     gap: 1.5em;
   }
 
+  .about-me__photo img {
+    width: 160px;
+  }
+
+  .about-me__info {
+    max-width: 90%;
+    font-size: 0.85rem;
+  }
+
   .section {
     margin-top: 3em;
-  }
-
-  .nav__list {
-    flex-direction: column;
-    position: absolute;
-    top: 5em;
-    left: 0;
-    right: 0;
-    width: 0;
-    overflow: hidden;
-    padding: 3em 0;
-    background-color: var(--clr-bg);
-    transition: width 0.2s ease-in-out;
-  }
-
-  .display-nav-list {
-    width: 100%;
-  }
-
-  .nav__list-item {
-    margin: 0.5em 0;
-  }
-
-  .about {
-    align-items: flex-start;
-    margin-top: 1.5em;
-  }
-
-  .scroll-container {
-    display: none;
   }
 }
