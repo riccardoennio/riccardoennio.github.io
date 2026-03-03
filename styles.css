@@ -232,7 +232,7 @@ main {
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 cards max per row */
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .project {
@@ -242,7 +242,7 @@ main {
   box-shadow: var(--shadow);
   border-radius: 10px; /* slightly smaller */
   transition: transform 0.2s linear;
-   margin-bottom: 4rem; /* increase if you want even more space */
+   margin-bottom: 2rem; /* increase if you want even more space */
 }
 
 .project:hover {
