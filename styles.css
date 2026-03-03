@@ -292,6 +292,8 @@ main {
   object-fit: cover;
   border-radius: 12px;
   display: block;
+
+  background-color: var(--clr-bg);
 }
 
 /* BACK BUTTON */
